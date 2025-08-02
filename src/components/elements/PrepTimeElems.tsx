@@ -6,9 +6,7 @@ interface PrepTimeElemsProps {
 export default function PrepTimeElems({ section, time }: PrepTimeElemsProps) {
   return (
     <li>
-      <b>
-        {section}: {time}
-      </b>
+      <b>{section}:</b> {time}
     </li>
   );
 }
