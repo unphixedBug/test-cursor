@@ -6,7 +6,7 @@ interface TitleProps {
 }
 
 export default function Title({ content, titleLevel }: TitleProps) {
-  const titleClass = clsx("font-bold font-family-young-serif", {
+  const titleClass = clsx("font-family-young-serif", {
     "text-stone-900 text-4xl": titleLevel === 1,
     "color-brown-800 text-2xl text-brown-800": titleLevel === 2,
   });
