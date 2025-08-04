@@ -4,6 +4,6 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/simple-recipe-page/",
+  base: "/test-cursor/",
   plugins: [react(), tailwindcss()],
 });

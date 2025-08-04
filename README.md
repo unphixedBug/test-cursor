@@ -1,69 +1,35 @@
-# React + TypeScript + Vite
+# Recipe Page - Frontend Mentor
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ma solution au challenge [Recipe page](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm) de Frontend Mentor.
 
-Currently, two official plugins are available:
+J'ai voulu essayé **Cursor** comme mentor: l'IA me guide et m'aide, mais je guarde la main sur tout. J'ai beaucoup apprécié ce que j'ai fait de l'IDE et j'ai l'impression que je vais pouvoir décuplé mon apprentissage avec ce nouvel outil, très très hypé par la suite.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Le projet
 
-## Expanding the ESLint configuration
+Page de recette responsive avec: design mobile (375px) et desktop (1440px)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Techno
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- React 19
+- TypeScript
+- Tailwind CSS
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## Cursor comme mentor
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Cursor m'aide en :
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Expliquant les concepts
+- Suggérant des améliorations
+- Aidant à débugger
+- Proposant des alternatives
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+_Projet simple pour tester Cursor en tant que mentor de dev._
+
+(Il m'a aussi aidé à écrire ce markdown, il est pas dingo mais ça fera l'affaire pour le moment)
+
+## À refactorer
+
+Rendre les listes réutilisables (boucles for, json pour les contenus)
+Bonus: rendre toute la page réutilisable afin de faire d'autres recettes
