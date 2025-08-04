@@ -57,3 +57,25 @@
   left: 0;
   font-weight: bold;
 }
+
+/* style custom listes numérotées */
+.custom-numbered-list {
+  list-style: none;
+  padding-left: 0;
+  counter-reset: item;
+}
+
+.custom-numbered-list li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 0.5rem;
+  counter-increment: item;
+}
+
+.custom-numbered-list li::before {
+  content: counter(item) ".";
+  position: absolute;
+  left: 0;
+  color: var(--color-brown-800);
+  font-weight: bold;
+}

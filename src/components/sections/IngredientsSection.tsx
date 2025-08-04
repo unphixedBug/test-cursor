@@ -5,7 +5,7 @@ export default function IngredientsSection() {
   return (
     <div className="flex flex-col gap-2">
       <Title content="Ingredients" titleLevel={2} />
-      <ol>
+      <ol className="custom-bullet-list">
         <Ingredient content="2-3 large egs" />
         <Ingredient content="Salt, to taste" />
         <Ingredient content="Pepper, to taste" />

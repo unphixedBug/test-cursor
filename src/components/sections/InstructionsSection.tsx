@@ -3,9 +3,9 @@ import Title from "../elements/Title";
 
 export default function InstructionsSection() {
   return (
-    <div>
+    <div className="flex flex-col gap-3">
       <Title content="Instructions" titleLevel={2} />
-      <ol>
+      <ol className="flex flex-col gap-3 custom-numbered-list">
         <Instructions
           instruction="Beat the eggs"
           details="In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed, You can add a tablespoon of water or milk for a fluffier texture."

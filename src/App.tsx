@@ -17,9 +17,9 @@ function App() {
         <Introduction />
         <PreparationTime />
         <Ingredients />
-        <hr />
+        <hr className="border-stone-300" />
         <Instructions />
-        <hr />
+        <hr className="border-stone-300" />
         <Nutrition />
       </Layout>
     </div>

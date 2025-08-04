@@ -8,7 +8,7 @@ export default function Instructions({
   details,
 }: InstructionsProps) {
   return (
-    <li className="list-decimal list-outside font-bold">
+    <li className="font-bold">
       {instruction}:
       {details && <span className="text-gray-500 font-medium"> {details}</span>}
     </li>
