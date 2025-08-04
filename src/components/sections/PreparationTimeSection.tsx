@@ -1,6 +1,6 @@
 import PrepTimeElems from "../elements/PrepTimeElems";
 
-export default function PreparationTime() {
+export default function PreparationTimeSection() {
   return (
     <div className="flex flex-col gap-2 bg-rose-50 p-5 rounded-lg">
       <h3 className="text-rose-800 font-bold">Preparation Time</h3>

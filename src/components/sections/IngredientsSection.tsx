@@ -1,7 +1,7 @@
-import Ingredient from "../elements/Ingredient";
+import Ingredient from "../elements/IngredientListItem";
 import Title from "../elements/Title";
 
-export default function Ingredients() {
+export default function IngredientsSection() {
   return (
     <div className="flex flex-col gap-2">
       <Title content="Ingredients" titleLevel={2} />

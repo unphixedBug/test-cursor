@@ -1,4 +1,4 @@
-export default function Introduction() {
+export default function IntroductionSection() {
   return (
     <p>
       An easy and quick dish, perfect for any meal. This classic omelette
